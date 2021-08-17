@@ -1,7 +1,7 @@
 filebeat.inputs:
 
 - type: log
-  enabled: false
+  enabled: true
   paths:
     - /var/log/python-test.log
 
@@ -18,11 +18,12 @@ fields:
   cloud_provider: aws
 
 setup.kibana:
-  host: "http://localhost:5601"
+  host: "127.0.0.1:5601"
   username: "elastic"
   password: "changeme"
 
 output.elasticsearch:
-  hosts: ["localhost:9200"]
-  protocol: "http"
+  hosts: ["https://127.0.0.1:9200"]
+  # protocol: "http"
   username: "elastic"
+  password: "PASSWORD"

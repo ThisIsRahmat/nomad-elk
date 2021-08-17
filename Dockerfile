@@ -13,7 +13,6 @@ RUN apt-get install -yq  apt-transport-https
 
 #-------ELASTICSEARCH-------------
 
-
 COPY elasticsearch.yml  /usr/share/elasticsearch-5.1.2/config/elasticsearch.yml
 
 #------kibana-------------
