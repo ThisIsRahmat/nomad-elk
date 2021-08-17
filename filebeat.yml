@@ -23,7 +23,7 @@ setup.kibana:
   password: "changeme"
 
 output.elasticsearch:
-  hosts: "localhost:9200"
+  hosts: "http://localhost:9200"
   # protocol: "http"
   username: "elastic"
   password: "PASSWORD"
