@@ -3,12 +3,12 @@
 
 To buid the dockerfile 
 
-docker build -t <name of docker image> .  
+docker build -t {name of docker image} .  
 
 
 To run the dockerfile this is specifically needed if you have a M1 Macbook like myself 
 
-docker run --platform linux/amd64 -p 4646:4646 -p 9200:9200 -p 9300:9300 -p 5601:5601 --cap-add SYS_ADMIN <name of docker image>
+docker run --platform linux/amd64 -p 4646:4646 -p 9200:9200 -p 9300:9300 -p 5601:5601 --cap-add SYS_ADMIN {name of docker image}
 
 
 After running the docker image you can access:
