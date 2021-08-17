@@ -1,0 +1,17 @@
+#/bin/bash
+
+apt-get update
+apt-get install -yq  apt-transport-https
+apt-get install -y --no-install-recommends apt-utils
+
+# Update dependencies ready
+apt-get upgrade -y
+
+# Install Java 8
+apt-get install -y openjdk-8-jdk
+apt-get install -y openjdk-8-jre
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+#Run elasticsearch
+/usr/share/elasticsearch-5.1.2/bin/elasticsearch -c /etc/elasticsearch/elasticsearch.yml

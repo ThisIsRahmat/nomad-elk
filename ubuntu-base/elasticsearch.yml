@@ -1,12 +1,4 @@
 
 cluster.name: elasticsearch-7.3.2
-
-cluster.initial_master_nodes:
-  - node-a
-
-node.name: node-a
-
-
 network.host: 0.0.0.0
-
 http.port: 9200
