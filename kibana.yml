@@ -5,10 +5,10 @@
 
 
 server.port: 5601
- server.name: "localhost"
- server.host: "127.0.0.1"
- elasticsearch.url: "http://127.0.0.1:9200"
-elasticsearch.hosts: [“http://127.0.0.1:9200”]
+server.name: "localhost"
+server.host: "0.0.0.0"
+elasticsearch.url: "http://localhost:9200"
+elasticsearch.hosts: [“http://localhost:9200”]
 
 # ## X-Pack security credentials
 # elasticsearch.username: elastic

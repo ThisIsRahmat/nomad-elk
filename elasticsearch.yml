@@ -1,7 +1,7 @@
 ## Cluster Settings
 cluster.name: nomad-fly
-# node.name:    nomad-fly-1
-network.host: 127.0.0.1
+node.name:    nomad-fly-1
+network.host: localhost
 ports: 9200
 # transport.host: 0.0.0.0
 # discovery.seed_hosts: ${ELASTIC_DISCOVERY_SEEDS}
